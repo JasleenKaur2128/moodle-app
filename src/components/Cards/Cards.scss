@@ -1,0 +1,31 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    gap: 1.25rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 20px);
+    background: #e2e2e2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 15px;
+
+    &__img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
